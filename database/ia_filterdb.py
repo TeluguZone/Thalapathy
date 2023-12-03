@@ -1,7 +1,3 @@
-# Don't Remove Credit @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot @Tech_VJ
-# Ask Doubt on telegram @KingVJ01
-
 import logging
 from struct import pack
 import re
@@ -98,7 +94,7 @@ async def get_search_results(chat_id, query, file_type=None, max_results=10, off
         raw_pattern = r'(\b|[\.\+\-_])' + query + r'(\b|[\.\+\-_])'
     else:
         raw_pattern = query.replace(' ', r'.*[\s\.\+\-_]')
-    
+
     try:
         regex = re.compile(raw_pattern, flags=re.IGNORECASE)
     except:
@@ -141,7 +137,7 @@ async def get_bad_files(query, file_type=None, filter=False):
         raw_pattern = r'(\b|[\.\+\-_])' + query + r'(\b|[\.\+\-_])'
     else:
         raw_pattern = query.replace(' ', r'.*[\s\.\+\-_]')
-    
+
     try:
         regex = re.compile(raw_pattern, flags=re.IGNORECASE)
     except:
